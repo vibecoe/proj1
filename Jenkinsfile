@@ -17,8 +17,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
-                // Add test steps here
+                script {
+                    docker.image(DOCKER_IMAGE_NAME).inside {
+                        sh 'python app/test_app.py'
+                    }
+                }
             }
         }
         stage('Push') {
