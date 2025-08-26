@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+
+# Docker
+docker-compose.override.yml
+
+# Other
+.DS_Store
