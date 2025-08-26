@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: your-dockerhub-username/hello-world:latest # Placeholder
+        image: vibecoe/hello-world:latest # Placeholder
         ports:
         - containerPort: 80
 

@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
-        DOCKER_IMAGE_NAME = "your-dockerhub-username/hello-world"
+        DOCKER_IMAGE_NAME = "vibecoe/hello-world"
         KUBECONFIG = credentials('kubeconfig')
     }
 
