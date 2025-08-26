@@ -1,3 +1,13 @@
+## Building the Jenkins Agent
+
+The Jenkins pipeline is configured to run inside a Docker container. You need to build this container image before running the pipeline.
+
+From the root of the project, run the following command:
+
+```bash
+docker build -t jenkins-agent:latest -f jenkins/Dockerfile.agent .
+```
+
 # Jenkins Setup and Configuration
 
 This document provides detailed instructions on how to set up and configure Jenkins for this project.
